@@ -110,14 +110,18 @@ It's not just a DEX aggregator, it's a **liquidity distribution engine** for par
 
 ### Cross-Parachain DEX Aggregation: Detailed Example
 
-**Scenario:** User wants to swap DOT (Asset Hub) → USDC (Bifrost)
+**Scenario:** User wants to swap 10 DOT (Asset Hub) → USDC (Bifrost)
 
 **With Swush:**
-- **Route 1**: DOT (Asset Hub) → XCM to Bifrost → Bifrost DEX (Rate: 0.98, Final: 98 USDC)
-- **Route 2**: DOT (Asset Hub) → XCM to HydraDX → HydraDX DEX → XCM to Bifrost (Rate: 1.01, Final: 99 USDC after fees)
-- **Route 3**: Asset Hub DEX → XCM to Bifrost (Rate: 0.99, Final: 97 USDC after fees)
 
-**Result:** Swush automatically selects Route 2 (HydraDX), giving user 99 USDC instead of 98 USDC - a 1% improvement with zero effort.
+- **Route 1**: DOT (Asset Hub) → XCM to Bifrost → Bifrost DEX (Rate: 3.98, Final: 39.8 USDC)
+- **Route 2**: DOT (Asset Hub) → XCM to HydraDX → HydraDX DEX → XCM to Bifrost (Rate: 4.01, Final: 40.1 USDC after fees)
+- **Route 3**: Asset Hub DEX → XCM to Bifrost (Rate: 3.99, Final: 39.9 USDC after fees)
+
+**Result:** Swush automatically selects Route 2 (HydraDX), giving user 40.1 USDC instead of 39.8 USDC - a 1% improvement with zero effort.
+
+Below is a visual representation of the routes.
+
 <img width="1840" height="936" alt="Mermaid Chart - Create complex, visual diagrams with text  A smarter way of creating diagrams -2025-08-22-203837" src="https://github.com/user-attachments/assets/70ada703-79b6-429c-8d74-67b79c7f9421" />
 
 
