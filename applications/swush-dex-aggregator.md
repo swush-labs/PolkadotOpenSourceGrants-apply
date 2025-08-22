@@ -120,7 +120,7 @@ It's not just a DEX aggregator, it's a **liquidity distribution engine** for par
 
 **Result:** Swush automatically selects Route 2 (HydraDX), giving user best swap rate.
 
-Below is a visual representation of the routes.
+**Visual Representation of the routes:**
 
 <img width="1840" height="936" alt="Mermaid Chart - Create complex, visual diagrams with text  A smarter way of creating diagrams -2025-08-22-203837" src="https://github.com/user-attachments/assets/70ada703-79b6-429c-8d74-67b79c7f9421" />
 
