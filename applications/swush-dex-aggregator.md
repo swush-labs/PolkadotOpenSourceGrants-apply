@@ -122,7 +122,8 @@ It's not just a DEX aggregator, it's a **liquidity distribution engine** for par
 
 **Visual Representation of the routes:**
 
-<img width="1840" height="936" alt="Mermaid Chart - Create complex, visual diagrams with text  A smarter way of creating diagrams -2025-08-22-205203" src="https://github.com/user-attachments/assets/d1890317-e9e5-4c13-a43a-6b0ae960f76d" />
+<img width="1840" height="936" alt="Mermaid Chart - Create complex, visual diagrams with text  A smarter way of creating diagrams -2025-08-22-205320" src="https://github.com/user-attachments/assets/07de2200-aa03-455d-a446-e63c64f4adb2" />
+
 
 ### Core Features, Components & Architecture
 
