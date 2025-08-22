@@ -118,7 +118,7 @@ It's not just a DEX aggregator, it's a **liquidity distribution engine** for par
 - **Route 2**: DOT (Asset Hub) → XCM to HydraDX → HydraDX DEX → XCM to Bifrost (Rate: 4.01, Final: 40.1 USDC after fees)
 - **Route 3**: Asset Hub DEX → XCM to Bifrost (Rate: 3.99, Final: 39.9 USDC after fees)
 
-**Result:** Swush automatically selects Route 2 (HydraDX), giving user 40.1 USDC instead of 39.8 USDC - a 1% improvement with zero effort.
+**Result:** Swush automatically selects Route 2 (HydraDX), giving user 40.1 USDC instead of 39.8 USDC - a 0.75% improvement with zero effort.
 
 Below is a visual representation of the routes.
 
