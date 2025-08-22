@@ -118,6 +118,8 @@ It's not just a DEX aggregator, it's a **liquidity distribution engine** for par
 - **Route 3**: Asset Hub DEX → XCM to Bifrost (Rate: 0.99, Final: 97 USDC after fees)
 
 **Result:** Swush automatically selects Route 2 (HydraDX), giving user 99 USDC instead of 98 USDC - a 1% improvement with zero effort.
+<img width="1840" height="936" alt="Mermaid Chart - Create complex, visual diagrams with text  A smarter way of creating diagrams -2025-08-22-203837" src="https://github.com/user-attachments/assets/70ada703-79b6-429c-8d74-67b79c7f9421" />
+
 
 ### Core Features, Components & Architecture
 
