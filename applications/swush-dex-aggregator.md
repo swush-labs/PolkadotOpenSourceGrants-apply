@@ -8,9 +8,13 @@
 
 > *Building the missing UX layer that lets users interact with Polkadot's full liquidity stack through one unified interface.*
 
-### Swush: A Unified DEX Aggregator for Polkadot’s Cross-Chain Ecosystem
+### Swush: A Unified DEX Aggregator for Polkadot's Cross-Chain Ecosystem
 
 Swush is a cross-chain DEX aggregator for Polkadot. It finds and executes the best asset swap routes across parachains, abstracting away the complexity of XCM and multiple parachains and DEXs.
+
+**Simple example:**
+> *Want to swap DOT(Asset Hub) → USDC(Bifrost)?* Instead of manually checking rates across Asset Hub, HydraDX, and Bifrost DEXs, Swush automatically finds the best route (e.g., HydraDX offers 3% better rates), handles all XCM complexity, and executes in few clicks.
+
 
 We delivered Swush v1, backed by a [Web3 Foundation grant](https://github.com/w3f/Grants-Program/blob/master/applications/swush-dex-aggregator.md), an MVP that finds and executes optimal swaps across Asset Hub, Hydration. This validated the core model: users don't want to figure out XCM hops or check multiple DEXs - they just want the best swap, in one click.
 
@@ -103,6 +107,17 @@ It's not just a DEX aggregator, it's a **liquidity distribution engine** for par
 <div align="center">
 <img width="550" alt="cross-chain" src="https://github.com/user-attachments/assets/2462a5da-622e-4b5e-a856-4e55b4717a32" />
 </div>
+
+### Cross-Parachain DEX Aggregation: Detailed Example
+
+**Scenario:** User wants to swap DOT (Asset Hub) → USDC (Bifrost)
+
+**With Swush:**
+- **Route 1**: DOT (Asset Hub) → XCM to Bifrost → Bifrost DEX (Rate: 0.98, Final: 98 USDC)
+- **Route 2**: DOT (Asset Hub) → XCM to HydraDX → HydraDX DEX → XCM to Bifrost (Rate: 1.01, Final: 99 USDC after fees)
+- **Route 3**: Asset Hub DEX → XCM to Bifrost (Rate: 0.99, Final: 97 USDC after fees)
+
+**Result:** Swush automatically selects Route 2 (HydraDX), giving user 99 USDC instead of 98 USDC - a 1% improvement with zero effort.
 
 ### Core Features, Components & Architecture
 
@@ -264,7 +279,7 @@ We have completed the MVP of Swush v1 as per [Web3 foundation grant](https://git
 ## Development Roadmap
 
 ### Overview
-- **Estimated Duration:** 4-4.5 months
+- **Estimated Duration:** 5-6 months
 - **Full-Time Equivalent (FTE):** 2.0
 - **Total Costs:** $30,000 USD
 
@@ -286,7 +301,7 @@ We have completed the MVP of Swush v1 as per [Web3 foundation grant](https://git
 | 6. | Transaction dry run | Dry run transaction to confirm execution and outcome of the transaction |
 | 7. | Slippage protection | Protection to check if the output amount is within the acceptable range |
 
-- **Estimated Duration:** 2-2.5 months
+- **Estimated Duration:** 2.5-3 months
 - **Full-Time Equivalent (FTE):** 2.0
 - **Total Costs:** $18,000 USD
 
@@ -307,7 +322,7 @@ We have completed the MVP of Swush v1 as per [Web3 foundation grant](https://git
 | 6. | Chainflip integration for Arbitrum and Solana | Cross ecosystem asset swaps for Asset Hub based assets like DOT/USDC/USDT to Arbitrum and Solana with fee estimation, slippage protection, and transaction status tracking |
 | 7. | Hyperliquid referral on-ramp | One-click Asset Hub/Polkadot(DOT/USDC/USDT) → Arbitrum(with chainflip) → Hyperliquid deposit |
 
-- **Estimated Duration:** 1.5-2 months
+- **Estimated Duration:** 2-2.5 months
 - **Full-Time Equivalent (FTE):** 2.0
 - **Total Costs:** $12,000 USD
 
