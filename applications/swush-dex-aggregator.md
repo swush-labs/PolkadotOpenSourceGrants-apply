@@ -115,10 +115,10 @@ It's not just a DEX aggregator, it's a **liquidity distribution engine** for par
 **With Swush:**
 
 - **Route 1**: DOT (Asset Hub) → XCM to Bifrost → Bifrost DEX (Rate: 3.98)
-- **Route 2**: DOT (Asset Hub) → XCM to HydraDX → HydraDX DEX → XCM to Bifrost (Rate: 4.02)
+- **Route 2**: DOT (Asset Hub) → XCM to Hydration    → HydraDX DEX → XCM to Bifrost (Rate: 4.02)
 - **Route 3**: Asset Hub DEX → XCM to Bifrost (Rate: 3.99)
 
-**Result:** Swush automatically selects Route 2 (HydraDX), giving user best swap rate.
+**Result:** Swush automatically selects Route 2 (Hydration), giving user best swap rate.
 
 **Visual Representation of the routes:**
 
