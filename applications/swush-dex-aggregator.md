@@ -13,7 +13,10 @@
 Swush is a cross-chain DEX aggregator for Polkadot. It finds and executes the best asset swap routes across parachains, abstracting away the complexity of XCM and multiple parachains and DEXs.
 
 **Simple example:**
-> *Want to swap DOT(Asset Hub) → USDC(Bifrost)?* Instead of manually checking rates across Asset Hub, Hydration, and Bifrost DEXs, Swush automatically finds the best route (e.g., Hydration offers 3% better rates), handles all XCM complexity, and executes in few clicks.
+
+> *Want to swap DOT(Asset Hub) → USDC(Bifrost)?*
+> 
+> Instead of manually checking rates across Asset Hub, Hydration, and Bifrost DEXs, Swush automatically finds the best route (e.g., Hydration offers 3% better rates), handles all XCM complexity, and executes in few clicks.
 
 
 We delivered Swush v1, backed by a [Web3 Foundation grant](https://github.com/w3f/Grants-Program/blob/master/applications/swush-dex-aggregator.md), an MVP that finds and executes optimal swaps across Asset Hub, Hydration. This validated the core model: users don't want to figure out XCM hops or check multiple DEXs - they just want the best swap, in one click.
